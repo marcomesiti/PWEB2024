@@ -1,0 +1,18 @@
+p {color: rgb(39, 241, 39)}
+
+.important {color: brown}
+
+#veryimportant{color: violet}
+
+
+ul>li {color: red}
+
+ol>li {color: blue}
+
+ul ol li {color: yellow}
+
+h1+h2 {color:brown}
+
+a:link { color:#ff0000; text-decoration:none; }   
+ a:visited { color:#00ff00; text-decoration:none; } 
+ a:hover	{ color:#ff00ff; text-decoration:underline; }
