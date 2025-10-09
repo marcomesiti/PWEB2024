@@ -1,0 +1,106 @@
+/* style3.css */
+
+header .theme-switcher {
+  margin-top: 0.5rem;
+}
+
+header .theme-switcher button {
+  margin: 0 0.25rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header .theme-switcher button:hover {
+  opacity: 0.8;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background: #121212;
+  color: #e0e0e0;
+}
+
+header {
+  background: linear-gradient(90deg, #0d47a1, #1976d2);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+aside {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+aside button:hover {
+  background: #1976d2;
+  transform: translateY(-2px);
+}
+
+main {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ccc;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background: #0d47a1;
+  color: #fff;
+}
+
+footer {
+  background: #0d47a1;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #1976d2;
+}

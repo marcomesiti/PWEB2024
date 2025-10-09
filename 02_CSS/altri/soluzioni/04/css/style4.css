@@ -1,0 +1,130 @@
+/* style4.css — right sidebar, left nav bar */
+header .theme-switcher {
+  margin-top: 0.5rem;
+}
+
+header .theme-switcher button {
+  margin: 0 0.25rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header .theme-switcher button:hover {
+  opacity: 0.8;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* HEADER becomes a vertical navbar on the left */
+header {
+  grid-row: 1 / span 3; /* header spans the entire height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  background: #002b5b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  border-right: 3px solid #004b8d;
+}
+
+header h1 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  padding: 0 1rem;
+}
+
+header .theme-switcher {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+header .theme-switcher button {
+  background: #004b8d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 90%;
+}
+
+header .theme-switcher button:hover {
+  background: #0077cc;
+}
+
+/* MAIN LAYOUT AREA */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 220px; /* main + aside */
+  margin-left: 180px; /* space for left nav bar */
+  flex: 1;
+  min-height: calc(100vh - 80px);
+}
+
+/* MAIN CONTENT */
+main {
+  background: white;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* RIGHT ASIDE */
+aside {
+  background: #e9eef3;
+  border-left: 2px solid #cbd5e0;
+  padding: 1rem;
+  border-radius: 10px 0 0 10px;
+}
+
+aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside nav li {
+  margin-bottom: 1rem;
+}
+
+aside button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #004b8d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+aside button:hover {
+  background: #0077cc;
+}
+
+/* FOOTER */
+footer {
+  background: #002b5b;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  border-top: 3px solid #004b8d;
+  margin-left: 180px; /* align with main layout */
+}

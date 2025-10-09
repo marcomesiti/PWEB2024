@@ -1,17 +1,15 @@
 #pos1{
 	position:relative;
+	float:left;
 }
 #pos2{
 	position:relative;
-	top:20px;
-	left:40px;
 	float:left;
+	clear: both;
 }
 #pos3{
 	position:relative;
-	top:0px;
-	left:150px;
-	clear:both;
+	float:right;
 }
 
 
